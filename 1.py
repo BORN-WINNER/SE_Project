@@ -1,4 +1,4 @@
-print("SAMKET V PUJARI")
+print("SAMKET PUJARI")
 print("SHREYASH PAWAR")
-print("SANDEEP BHAT")
+print("SANDEEP R BHAT")
 print("HARSHA")
