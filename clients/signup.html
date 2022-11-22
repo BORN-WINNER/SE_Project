@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SignUp page</title>
+    <style>
+        .div1{
+            text-align: center;
+            background-color: rgb(26, 166, 247);
+            color: aliceblue;
+            width: 300px;
+            margin: auto;
+           
+        }
+        #div2{
+            position:sticky;
+            
+            background-color:transparent;
+            width:400px;
+            height: fit-content;
+            text-align: center;
+            vertical-align: middle;
+            margin: auto;
+            
+
+            border: 3px solid white;
+            padding: 10px;
+            margin-top: 90px;
+            border-radius: 10%;
+
+        }
+        #title1{
+            text-align: center;
+            background-color: antiquewhite;
+        }
+        .up{
+            text-align: left;
+        }
+        h4{
+            margin: 10px;
+            font-weight: bolder;
+        }
+         /* body{
+            background-image: url("img2.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }  */
+        .words{
+            color: aliceblue;
+        }
+        input{
+           border:none;
+           border-bottom: 2px solid wheat;
+           background-color: transparent;
+           color: rgb(246, 246, 8);
+           font-weight: bolder;
+           
+           
+
+        }
+        ::placeholder{
+            color: antiquewhite;
+            font-weight: normal;
+        }
+        button{
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 10%;
+            width: 250px;
+            font-weight: bold;
+        }
+        span{
+            color: chartreuse;
+        }
+        a{
+            color:bisque;
+        }
+        #submitb1{
+            height: 50px;
+            color:white
+        }
+         #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+} 
+    </style>
+    
+    
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="book3.mp4" type="video/mp4">
+      </video> 
+    <div class="div1">
+    <H1 >Online Book Store</H1>
+    
+    </div>
+    <form action="signup.php" method="post">
+    <!-- <div id="div2">
+       <div id="div3">
+        <h1 class="words">SIGN UP</h1><hr><br>
+       <h3 class="up words">Username</h4>
+        <input  required type="text" name="name" placeholder="Enter your user name" />
+        
+        <br>
+        <h3 class="up words">Password</h3>
+        <input required type="password" name="password" placeholder="Enter your password here" pattern=".{8,}"/>
+        <br>
+        <h3 class="up words">Confirm Password</h3>
+        <input required type="password" name="cpassword" placeholder="Confirm password" pattern=".{8,}" />
+        <br>
+        <h3 class="up words">Phone Number</h3>
+        <input required type="number" name="phoneNumber" placeholder="Enter your phone number" />
+        <br>
+        <h3 class="up words">Email</h3>
+        <input required type="text" name="email" placeholder="Enter your E-Mail Id" />
+        <br><br>
+        <input required type="checkbox"><span class=""> Accept our <a href="terms&conditions.html">Terms & Conditions</a></span>
+        <br><br>
+        <input type="submit" id="submitb1">Create an Account</input>
+        </div>
+
+    </div>-->
+    <div id="div2">
+       <div >
+        <h1 class="words">SIGN UP</h1><hr><br>
+       <h3 class="up words">Username</h4>
+        <input  required type="text" name="name" placeholder="Enter your user name" />
+        
+        <br>
+        <h3 class="up words">Password</h3>
+        <input required type="password" name="password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter your password here" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>
+        <br>
+        <h3 class="up words">Confirm Password</h3>
+        <input required type="password" name="cpassword" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+        <br>
+        <h3 class="up words">Phone Number</h3>
+        <input required type="number" name="phoneNumber" placeholder="Enter your phone number" minlength="10" maxlength="10" title="Must contain 10 numbers" />
+        <br>
+        <h3 class="up words">Email</h3>
+        <input required type="text" name="email" placeholder="Enter your E-Mail Id" />
+        <br><br>
+        <input required type="checkbox"><span class=""> Accept our <a href="terms&conditions.html">Terms & Conditions</a></span>
+        <br><br>
+        <input type="submit" id="submitb1" value="Create an account"/>
+        </div>
+
+    </div>
+    
+    </form> 
+
+
+
+</body>
+</html>

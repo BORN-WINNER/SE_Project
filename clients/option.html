@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Option </title>
+    <style>
+        .div1{
+            text-align: center;
+            background-color: rgb(26, 166, 247);
+            color: aliceblue;
+            width: 300px;
+            margin: auto;
+           
+        }
+        #options{
+            display: flex;
+            border: 10px;
+            margin: auto;
+        }
+        #buy{
+            margin-left: 300px;
+            margin-right: 500px;
+            margin-top: 200px;
+        }
+        body{
+            background-image: url(bg4.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .div3{
+            background-color: transparent;
+            width:400px;
+            height: fit-content;
+            text-align: center;
+            border: 3px solid;
+            display: inline-block;
+            
+            border-radius: 10%;
+            margin: 25px;
+        }
+        #wanna{
+            align-self: center;
+            color: aliceblue;
+            margin: auto;
+            text-align: center;
+            font-size: 58px;
+        }
+        #seller{
+            border-radius: 45%;
+            height: 500px;
+        }
+       
+    </style>
+    <script>
+        function buy(){
+            window.location.href="../admin/view2.php" ;
+               }
+        function sell(){
+            window.location.href="seller.html" ;
+            }
+        
+
+    </script>
+
+</head>
+<body>
+    <div class="div1">
+        <H1 >Online Book Store</H1>
+        
+    </div>
+    <br><br>
+    <H1 id="wanna">Wanna be a</H1>
+    <br>
+    <div class="full">
+    <div class='div3' id="buy" onclick="buy()">
+        <img src='buyer2.svg' alt='buy' width=400 height="500"/>
+        <br>
+        
+        <h1>Buyer</h1>
+    
+        
+        </div>
+        <div class='div3' id="sell" onclick="sell()">
+            <img src='seller2.jpeg' alt='sell' width=400 height="500" id="seller"/>
+            <br>
+            
+            <h1>Seller</h1>
+            
+            
+            </div>
+        </div>
+
+<!--  
+<div id="options">
+    <div id="buy"> 
+        <h2>Buyer</h2>
+        <img src="buyer2.svg" width="300" height="400"/>
+    </div>
+    <div id="sell">
+        <h2>Seller</h2>
+        <img src="seller1.jpg" width="300" height="400"/>
+    </div> 
+</div>  -->
+
+
+</body>
+</html>

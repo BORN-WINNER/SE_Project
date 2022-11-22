@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+#sam{
+height:500px;
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>This is our SE project</p>
+  <p>Thanking Sudeepa madam for the teaching and guidence for making this project wonderfull.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="sam.png" alt="Jane" id="sam" style="width:100%">
+      <div class="container">
+        <h2>Samket V Pujari</h2>
+        <p class="title">MEMBER 1</p>
+        <p>PES UNIVERSITY</p>
+        <p>PES2UG20CS546</p>
+        <p><B>sam@gmail.com</B></p>
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Shreyas Pawar</h2>
+        <p class="title">MEMBER 2</p>
+        <p>PES UNIVERSITY</p>
+        <p>PES2UG20CS554</p>
+        <p><B>shrey@gmail.com</B></p>
+       
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="column">
+    <div class="card">
+      <img src="3.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Harsha </h2><br>
+        <p class="title">MEMBER 3</p>
+        <p>PES UNIVERSITY</p>
+        <p>PES2UG20CS580</p>
+        <p><B>harsh@gmail.com</B></p>
+       
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="column">
+    <div class="card">
+      <img src="4.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Sandeeep Bhat</h2>
+        <p class="title">Member 4</p>
+        <p>PES UNIVERSITY</p>
+       <p> PES2UG20CS547</p>
+        <p><B>sandy@gmail.com</B></p>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

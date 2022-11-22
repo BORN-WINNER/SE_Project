@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Thank You Page</title>
+
+<style>
+
+    body{
+        background-image:url("thankyou.jpg");
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
+    .div1{
+            text-align: center;
+            background-color: rgb(26, 166, 247);
+            color: aliceblue;
+            width: 300px;
+            margin: auto;
+           
+        }
+        .empty{
+            margin:auto;
+            text-align:center;
+            border: 3px solid;
+            width:400px;
+            color:white;
+            margin-top:10%;
+        }
+        h2{
+            color: rgb(0, 72, 255);
+        }
+        #logout{
+        margin-left: 55%;
+        
+            background-color: transparent;
+            border: 2px ;
+            border-radius: 10%;
+            
+            font-weight: bold;
+            height:70px ;
+            width: 90px;
+       }
+       #logoutIcon{
+        height:40px;
+        width: 40px;
+
+       }
+       #order{
+        color:blue;
+       }
+       #fb{
+            background-color: transparent;
+            color:slateblue;
+            border: 2px solid white;
+            border-radius: 10%;
+            width: 100px;
+            height: 70px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+</style>
+<script>
+    function move(){
+    window.location.href='../shared/logout.php'
+    }
+    function feedback(){
+        window.location.href='../admin/feedbackform.html'
+    }
+</script>
+
+</head>
+<body>
+    <div class="div1">
+        <H1 id="title">Shop IT</H1>
+        
+        </div>
+        <button id='logout' onclick="move()"><img src='logout.png' id='logoutIcon'/><span>Logout</span></button><br>
+        <br>
+        <div class='empty'>
+            <h1 id="order">Order Placed</h1><hr>
+            <br>
+            <h1>Thank You for visiting our site</h1>
+                <a id='a1' href='../admin/view2.php'><h2>Buy More</h2></a>
+                <hr>
+                <h3 id="feed">Please give us Feedback  <button id="fb" onclick="feedback()">Feedback</button></h3> 
+            </div>
+</body>
+</html>

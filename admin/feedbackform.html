@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback Page</title>
+    <style>
+        .div1{
+            text-align: center;
+            background-color: rgb(26, 166, 247);
+            color: aliceblue;
+            width: 300px;
+            margin: auto;
+           
+        }
+        #div2{
+            background-color:transparent;
+            width:500px;
+            height: fit-content;
+            text-align: center;
+            vertical-align: middle;
+            margin: auto;
+            
+
+            border: 2px solid;
+            padding: 10px;
+            margin-top: 90px;
+            border-radius: 2%;
+
+        }
+        #title1{
+            text-align: center;
+            background-color: antiquewhite;
+        }
+        .up{
+            text-align: left;
+        }
+        h4{
+            margin: 10px;
+            font-weight: bolder;
+        }
+        body{
+            background-image: url("bg2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .words{
+            color: aliceblue;
+        }
+        input{
+           border:none;
+           border-bottom: 2px solid wheat;
+           background-color: transparent;
+           color: white;
+           font-weight: bolder;
+           
+           
+
+        }
+        ::placeholder{
+            color: antiquewhite;
+            font-weight: normal;
+        }
+        button{
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 10%;
+            width: 250px;
+            font-weight: bold;
+        }
+        span{
+            color: chartreuse;
+        }
+        a{
+            color:bisque;
+        }
+        #submitb{
+            height: 50px;
+        }
+        ul{
+            display: flex;
+        }
+        li{
+            list-style-type: none;
+        }
+        select{
+            background-color: transparent;
+            color: white;
+            border: 2px solid white; 
+            width: 150px;
+            font-weight: bold;
+        }
+        option{
+            color: black;
+        }
+        ul{
+            color: aqua;
+            font-size: 20px;
+        }
+        textarea{
+            background-color: transparent;
+            border: 2px solid white; 
+            color:rgb(255, 230, 3);
+            font-size: 18px;
+        }
+        .div5{
+        position:sticky;
+       }
+       #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+    </style>
+
+
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="purchase4.mp4" type="video/mp4">
+      </video> 
+   
+    <div class="div5">
+    <div class="div1">
+    <H1 >Shop IT</H1>
+    
+    </div>
+    <form action="feedback.php" method="post">
+    <div id="div2">
+       <div >
+        <h1 class="words">FeedBack Form</h1><hr><br>
+       <h3 class="up words">Name</h3>
+        <input  required type="text" name="name" placeholder="Enter your name" />
+        
+        <br>
+        <h3 class="up words">Phone Number</h3>
+        <input required type="number" name="phone" placeholder="Enter your Phone No." minlength="10" maxlength="10"/>
+        <br><br>
+        <h3 class="up words" >Purchase type</h3>
+        <select name="type" >
+            <option>Electronics</option>
+            <option>Fashion</option>
+            <option>Food Items</option>
+            <option>Books</option>
+            <option>Accessories</option>
+        </select>
+
+        <h3 class="up words">How was your experiece</h3>
+        <ul >
+            <li><input type="radio" name="view" value="excellent" id="excellent" required> 
+                <label for="excellent">excellent</label>
+               <div class="check "></div>
+          </li>
+          <li><input type="radio" name="view" value="good" id="good"> 
+               <label for="good">good</label>
+               <div class="check"></div>
+          </li>
+          <li><input type="radio" name="view" value="neutral" id="neutral">
+              <label for="neutral">neutral</label>
+              <div class="check"></div>
+          </li>
+          <li><input type="radio" name="view" value="poor" id="poor"> 
+               <label for="poor">poor</label>
+               <div class="check"></div>
+          </li>
+        </ul>
+        
+        <h3 class="up words">Any Suggestions (optional)</h3>
+        <textarea cols="45" rows="7" name="suggestions"></textarea>
+        <br><br>
+        <input type="submit" id="submitb" value="Submit"/>
+        <!-- <button id="submitb">Submit</button> -->
+       </div>
+
+    </div>
+    </form>
+</div>
+
+
+</body>
+</html>
